@@ -1,16 +1,21 @@
 <template>
     <div>
-        <p class="color">{{a}}</p>
-        <h1>sada收拾收拾sd</h1>
+        <my-row :gutter="10">
+            <div class="col">aa</div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </my-row>
     </div>
 </template>
 
 <script>
+import Home from "./containers/Home";
 export default {
   data() {
-    return {
-      a: "111"
-    };
+    return {};
+  },
+  components: {
+    Home
   },
   mounted() {
     console.log("mount");
@@ -19,8 +24,11 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.color {
-  color: red;
+.col {
+  width: 100px;
+  float: left;
+  height: 100px;
+  background: #fcc;
 }
 </style>
 

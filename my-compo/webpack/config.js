@@ -2,6 +2,7 @@ import path from 'path';
 
 export const alias = {
     components: path.resolve(__dirname, '../components'),
+    '@': path.resolve(__dirname, '../'),
 };
 export const exclude = /node_modules/;
 export const entry = {

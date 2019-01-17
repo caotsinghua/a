@@ -18,7 +18,7 @@ export default {
         chunkFilename: '[id].js',
     },
     resolve: {
-        extensions: ['.js', '.vue', '.json'],
+        extensions: ['.js', '.vue', '.jsx', '.json'],
         alias,
     },
     module: {
