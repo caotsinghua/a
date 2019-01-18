@@ -1,19 +1,15 @@
 @import '../../styles/clearfix.less';
 @import '../../styles/mixins.less';
+
 .my-row {
     display: block;
     box-sizing: border-box;
     .make-row();
 }
-.make-row(@gutter:0) {
-    display: block;
-    margin-left: (@gutter / -2) px;
-    margin-right: (@gutter / -2) px;
-    .clearfix();
-}
 
 .my-row-flex {
     display: flex;
+    .make-row-flex();
 }
 
 .my-col {
@@ -60,4 +56,3 @@
 }
 
 .make-grid-columns();
-.make-grid();

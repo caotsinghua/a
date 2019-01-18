@@ -20,6 +20,9 @@ export default {
             default: 'my-row',
         },
     },
+    provider: {
+        rowContext: this,
+    },
     render(h) {
         const { type, justify, align, gutter, prefixCls, $slots } = this;
         const classes = {
